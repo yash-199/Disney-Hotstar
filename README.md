@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Hotstar-Disney Clone
+This project is a clone of the Hotstar-Disney platform, built using React.js, JavaScript, Firebase for authentication, Tailwind CSS for styling, and various other libraries for specific functionalities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Technologies Used
+**React.js
+JavaScript
+Firebase (Authentication)
+Tailwind CSS
+React Icons (for sidebar icons)
+React Phone Input-2 (for phone number verification)
+React Toastify (for alerts)
+Modal (for opening modals)
+YouTube API (for playing trailers)
+React Router DOM (for navigation)**
 
-## Available Scripts
 
-In the project directory, you can run:
+# bash
+Copy code
+git clone https://github.com/your-username/hotstar-disney-clone.git
+cd hotstar-disney-clone
+Install dependencies:
 
-### `npm start`
+# bash
+Copy code
+npm install
+Create a Firebase project and set up Firebase Authentication. Update the Firebase configuration in src/firebase/firebase.js with your Firebase project's configuration.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Install React Icons:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# bash
+Copy code
+npm install react-icons
+Install React Phone Input-2:
 
-### `npm test`
+# bash
+Copy code
+npm install react-phone-input-2 --save
+Install React Toastify:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# bash
+Copy code
+npm install react-toastify --save
+Install Modal:
 
-### `npm run build`
+# bash
+Copy code
+npm install react-modal
+Install YouTube:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# bash
+Copy code
+npm install react-youtube
+Install React Router DOM:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# bash
+Copy code
+npm install react-router-dom
+Usage
+Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# bash
+Copy code
+npm start
+# Open http://localhost:3000 to view it in your browser.
 
-### `npm run eject`
+The main page will be displayed. Clicking on the "Watch" button without logging in will show a warning to please log in.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After logging in, when you click the "Watch" button, a modal will open to allow you to watch the trailer of the selected movie or show.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Project Structure
+src/components: Contains all React components.
+src/firebase: Firebase configuration and setup.
+src/pages: Different pages of the application (e.g., Home, Login, Watch).
+src/App.js: Main component rendering the application.
